@@ -1,16 +1,20 @@
 {
-  "name": "frontend-base",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "workspaces": [
-    "react-base",
-    "react-base-next"
-  ]
+    "name": "frontend-base",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "start:base": "npm start -w react-base",
+        "start:base-next": "npm start -w react-base-next"
+    },
+    "workspaces": [
+        "react-base",
+        "react-base-next"
+    ],
+    "dependencies": {
+        "react-router-dom": "^6.14.2"
+    }
 }
