@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
 import RouteComponent from './router';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
     return (
         <div className="App">
             <Header />
-            <RouteComponent />
+            <BrowserRouter>
+                <RouteComponent />
+            </BrowserRouter>
         </div>
     );
 }
