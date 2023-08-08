@@ -8,7 +8,9 @@
     "license": "ISC",
     "scripts": {
         "start:base": "npm start -w react-base",
-        "start:base-next": "npm start -w react-base-next"
+        "start:base-next": "npm start -w react-base-next",
+        "start:base-next:build": "npm run build -w react-base-next",
+        "start:base-next:dev": "npm run dev -w react-base-next"
     },
     "workspaces": [
         "react-base",
