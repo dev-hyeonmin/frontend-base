@@ -1,27 +1,21 @@
 {
-    "name": "frontend-base",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "scripts": {
-        "start:base": "npm start -w react-base",
-        "start:base-next": "npm start -w react-base-next",
-        "start:base-next:build": "npm run build -w react-base-next",
-        "start:base-next:dev": "npm run dev -w react-base-next"
-    },
+    "name": "frontend-base-mement",
+    "version": "0.1.0",
+    "private": true,
     "workspaces": [
-        "react-base",
-        "react-base-next"
+        "packages/*"
     ],
+    "scripts": {
+        "lint": "npm run lint --workspaces",
+        "dev:homepage": "npm run dev -w homepage"
+    },
     "dependencies": {
-        "@reduxjs/toolkit": "^1.9.5",
-        "i18next": "^23.4.1",
-        "react-i18next": "^13.0.3",
-        "react-redux": "^8.1.2",
-        "react-router-dom": "^6.14.2",
-        "redux": "^4.2.1"
+        "@types/node": "20.5.0",
+        "@types/react": "18.2.20",
+        "@types/react-dom": "18.2.7",
+        "next": "13.4.16",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "typescript": "5.1.6"
     }
 }
