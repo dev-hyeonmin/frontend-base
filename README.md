@@ -1,3 +1,7 @@
+## NextJS
+
+https://nextjs.org/docs
+
 ## npm workspace
 
 1. Add workspace: npm init -w ./packages/<WORKSPACE_NAME>
