@@ -1,0 +1,9 @@
+header { display: flex; height: 70px; line-height: 70px; justify-content: center; align-items: center; border-bottom: 1px solid #ddd; } 
+header ul { display: grid; width: 100%; max-width: 1200px; padding: 0 10px; grid-template-columns: 1fr 1fr 1fr 1fr; } 
+header ul li { text-align: center; font-weight: bold; } 
+
+footer { border-top: 1px solid #ddd; } 
+footer .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 30px 10px;} 
+footer b {font-size: 18px; font-weight: bold; letter-spacing: 1px;}
+
+.wrapper { width: 100%; max-width: 1200px; min-height: 600px; margin: 0 auto; } 
