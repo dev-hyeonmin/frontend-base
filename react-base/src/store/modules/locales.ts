@@ -1,4 +1,3 @@
-import { RootState } from "..";
 import { localesType } from "../../constants/common";
 
 
@@ -23,6 +22,5 @@ export const localesSlice = createSlice({
 })
 
 export const { changeCurrentLocale } = localesSlice.actions;
-export const selectLocale = (state: RootState) => state.locales.locale;
 
 export default localesSlice.reducer;
