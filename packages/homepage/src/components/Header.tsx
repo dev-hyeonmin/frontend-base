@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { LocalesReduxState, LocalesType, updateLocale } from "../store/locales";
-import { useDispatch, useSelector } from "react-redux";
+import { LocalesType, updateLocale } from "../store/locales";
+import { useDispatch } from "react-redux";
 
 export default function Header() {
     const dispatch = useDispatch();
-    const temp = useSelector((state: LocalesReduxState) => state);
     const selectLocale = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedLocale = e.target.value;
         dispatch(updateLocale({ locale: selectedLocale }));
