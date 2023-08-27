@@ -1,4 +1,6 @@
 {
     "title": "한국어 번역입니다. 안녕!",
-    "description": "한국어 설명입니다."
+    "description": "한국어 설명입니다.",
+    "events": "이벤트 리스트",
+    "event": "이벤트"
 }
