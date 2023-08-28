@@ -1,9 +1,32 @@
 import { use, useEffect, useState } from 'react'
-import { EventDegree, EventGroup, EventItem } from './interface'
 import axios from 'axios'
 
+interface EventDegree {
+    cha: number
+    chaName: string
+    eventText: string
+    startDate: string
+    endDate: string
+}
+
+interface EventGroup {
+    id: number
+    groupName: string
+    groupSubName: string
+    startDate: string
+    endDate: string
+}
+
+interface EventItem {
+    id: number
+    itemName: string
+    itemSubName: string
+    originalPrice: number
+    discountedPrice: number
+}
+
 // const res = await fetch('http://localhost:3000/api/events');
-export default function Events({ data }) {
+export default function Events({ data }: any) {
     const [eventDegree, setEventDegree] = useState<EventDegree[]>([])
     const [eventGroup, setEventGroup] = useState<EventGroup[]>([])
     const [eventItem, setEventItem] = useState<EventItem[]>([])

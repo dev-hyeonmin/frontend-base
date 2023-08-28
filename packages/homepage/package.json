@@ -7,5 +7,10 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint"
+    },
+    "browser": {
+        "fs": false,
+        "os": false,
+        "path": false
     }
 }

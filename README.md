@@ -17,3 +17,6 @@ https://nextjs.org/docs
 1. 항상 reducer()란 이름의 함수를 export default 해야 합니다.
 2. 항상 모듈의 action 생성자들을 함수 형태로 export 해야 합니다.
 3. action type은 reducer/ACTION_TYPE 형태로 작성합니다. (ex / const ADD_TODO = "todo/ADD_TODO")
+
+
+- webpack fs issue : https://cocoon1787.tistory.com/851
